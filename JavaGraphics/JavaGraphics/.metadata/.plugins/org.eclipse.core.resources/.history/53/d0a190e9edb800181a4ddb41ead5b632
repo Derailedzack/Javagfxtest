@@ -1,0 +1,76 @@
+package net.gfx;
+
+import java.awt.Canvas;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Polygon;
+import java.awt.SystemColor;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.image.ImageObserver;
+import java.io.File;
+import java.io.IOException;
+import java.sql.Time;
+import java.util.TimeZone;
+
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.WindowConstants;
+
+import org.apache.logging.log4j.core.config.builder.impl.BuiltConfiguration;
+import org.apache.logging.log4j.core.util.SystemClock;
+
+public class Main {
+public static Image img;
+public static ImageObserver observer;
+private static KeyEvent Event;
+private static Polygon p;
+
+
+	public static void main(String[] args)   {
+		// TODO Auto-generated method stub
+		SystemClock clock = new SystemClock();
+		
+javax.swing.JFrame frame = new JFrame("Undefined");
+javax.swing.JPanel panel = new JPanel();
+
+java.awt.Canvas canvas = new Canvas();
+frame.setSize(640, 480);
+frame.setVisible(true);
+
+frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+frame.setResizable(false);
+
+frame.add(panel);
+panel.setVisible(true);
+
+panel.setSize(640, 480);
+
+
+
+
+try {
+	panel.getGraphics().drawImage(ImageIO.read(new File("G:\\C++\\SDL 2\\Debug\\res\\Untitled32X32.png")), 4, 2, 32, 32, observer);
+} catch (IOException e) {
+	// TODO Auto-generated catch block
+	org.apache.logging.log4j.LogManager.getLogger().fatal("A Fatal Error Has Occurred:" + "  " + e);
+	System.exit(-1);
+}
+
+
+panel.getGraphics().drawRect(18, 50, 32, 32);
+org.apache.logging.log4j.LogManager.getLogger().debug();
+
+
+//panel.getGraphics().fillRect(5, 100, 32, 32);
+
+//check.keyPressed(Event);
+	}
+	
+			
+		
+	}
+	
+
+

@@ -1,0 +1,13 @@
+package net.gfx;
+
+import java.awt.event.KeyEvent;
+
+public class KeyCheck {
+	
+	public void keyPressed(KeyEvent Event) {
+		
+		char tc = Event.getKeyChar();
+		while(true) {
+			System.out.println(tc);
+		}
+
