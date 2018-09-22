@@ -1,8 +1,0 @@
-package net.gfx;
-
-public class Test {
-	public static native int setenv(String key, String value, boolean overwrite);
-	 private void runTest() {
-	        Test.setenv("LD_LIBRARY_PATH", "foo", true);
-	    }
-}
