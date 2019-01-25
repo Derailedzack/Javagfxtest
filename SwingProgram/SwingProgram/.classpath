@@ -27,5 +27,13 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/SwingProgram/commons-configuration2-2.3-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="Deps/jul-to-slf4j-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="Deps/jul-to-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="Deps/log4j-over-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="consul.zip"/>
+	<classpathentry kind="lib" path="guava-26.0-jre.jar"/>
+	<classpathentry kind="lib" path="gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="w3c-dom.jar"/>
+	<classpathentry kind="lib" path="commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
